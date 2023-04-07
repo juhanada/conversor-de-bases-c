@@ -5,7 +5,7 @@
   Acadêmica: Juíle Hanada
   Atividade Prática 01 - Conversor de Bases
 
-  Instruções: O seguinte código corresponde ao algoritmo em C para conversão de bases entre 2 a 61, com o valor em decimal limitado a 4.294.967.295 (unsigned int)
+  Instruções: O seguinte código corresponde ao algoritmo em C para conversão de bases entre 2 a 62, com o valor em decimal limitado a 4.294.967.295 (unsigned int)
 
   Observação: Foi implementado para o usuário especificar sempre a base de origem e destino. Sem essa especificação, não seria possível estabelecer se o valor lido é corresponde a base de origem ou destino. 
 */
@@ -15,9 +15,9 @@
 #include <stdbool.h>
 #include <math.h>
 
-// validar bases de entrada e saída (2-61)
+// validar bases de entrada e saída (2-62)
 bool isBaseValid(unsigned char base) {
-  if (base >= 2 && base <= 61)
+  if (base >= 2 && base <= 62)
     return true;
   else {
     printf("Base inválida.\n");
@@ -69,7 +69,7 @@ int main () {
   // lendo e validando base de entrada
   valida = false;
   while (!valida) {
-    printf("Informe a base de entrada (2 a 61): ");
+    printf("Informe a base de entrada (2 a 62): ");
     scanf("%u", &base_origem);
     valida = isBaseValid(base_origem);
   }
@@ -77,7 +77,7 @@ int main () {
   // lendo e validando base de destino
   valida = false;
   while (!valida) {
-    printf("Informe a base de destino (2 a 61): ");
+    printf("Informe a base de destino (2 a 62): ");
     scanf("%u%*c", &base_destino);  
     valida = isBaseValid(base_destino);
   }
