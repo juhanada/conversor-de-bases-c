@@ -6,6 +6,8 @@ Este trabalho foi desenvolvido como atividade avaliativa para a disciplina de Si
 Um simples e divertido algoritmo em C para conversão de valores de qualquer base para qualquer base. 
 Informe a base de origem, a base de destino e o valor a ser convertido. Receba o resultado da conversão e o seu equivalente valor na base 10.
 
+Foram utilizados vetores de alocação dinâmica para armazenamento do valor de entrada e a saída. o Algoritmo inicialmente converte o valor inserido para base 10 e posteriormente para a base de destino.
+
 ## Limitações
 Bases válidas: 2 a 62. Valor máximo possível (em base 10): 4.294.967.295.
 
